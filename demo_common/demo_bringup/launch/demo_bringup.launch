@@ -22,14 +22,13 @@
 
   <!-- spawn robot -->
   <include file="$(find demo_gazebo)/launch/spawn_urdf.launch" >
-    <arg name="robot_name" default="demo_model"/>
-    <arg name="x" default="0.0"/>
-    <arg name="y" default="0.0"/>
-    <arg name="z" default="9.0"/>
-    <arg name="roll" default="0.0"/>
-    <arg name="pitch" default="0.0"/>
-    <arg name="yaw" default="0.0"/>
-    <arg name="urdf_robot_file" default="$(find demo_description)/robots/demo_model.urdf.xacro"/>
+    <arg name="robot_name" value="demo_model"/>
+    <arg name="x" value="0.0"/>
+    <arg name="y" value="0.0"/>
+    <arg name="z" value="1.0"/>
+    <arg name="roll" value="0.0"/>
+    <arg name="pitch" value="0.0"/>
+    <arg name="yaw" value="0.0"/>
   </include>
 
   <arg name="rviz_config" default="$(find demo_description)/launch/config/display.rviz"/>
