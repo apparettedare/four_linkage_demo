@@ -1,10 +1,12 @@
 demo_model:
+  gazebo_ros_control:
+    pid_gains:
+      link_A_to_link_B: {p: 100.0, i: 0.01, d: 10.0}
+
   demo_position_controller:
     type: position_controllers/JointPositionController
     joint: link_A_to_link_B
-    pid: {p: 100.0, i: 0.01, d: 10.0}
 
   demo_effort_controller:
     type: effort_controllers/JointPositionController
     joint: link_A_to_link_B
-    pid: {p: 100.0, i: 0.01, d: 10.0}
