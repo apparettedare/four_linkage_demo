@@ -32,7 +32,7 @@
       </collision>
     </link>
 
-    <joint name="link_A_to_link_B" type="revolute">
+    <joint name="link_A_to_link_B" type="continuous">
       <axis xyz="0 0 1"/>
       <limit lower="${-M_PI/4}" upper="${M_PI/4}" effort="100.0" velocity="${M_PI}"/>
       <dynamics damping="0.1"/>
